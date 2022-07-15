@@ -1,1 +1,40 @@
+// Source: https://usaco.guide/general/io
+import java.util.Scanner;
+import java.io.*;
+import java.util.StringTokenizer;
+
+public class Main {
+	public static void main(String[] args) throws IOException {
+		Scanner sc = new Scanner(System.in); 
+		
+	}
+}
+
+public class Rectangle {
+	int x_left;
+	int x_right;
+	int y_left;
+	int y_right;
+	 
+	 Rectangle(int x_left, int x_right, int y_left , int y_right){
+		 this.x_left = x_left;
+		 this.x_right = x_right;
+		 this.y_left = y_left;
+		 this.y_right = y_right;
+
+	 }
+
+	 public int area(){
+		 int area = (x_right-x_left)*(y_left-y_right);
+		 return area;
+	 }
+
+	 public boolean check_overlap( Rectangle overlap_rec){
+		// overlap left side 
+		if( overlap_rec.x_right<this.x_right&& overlap_rec.x_right>this.x_left){
+			if(overlap_rec.y_right> this.y_right && y)
+		}
+	 }
+
+}
 
